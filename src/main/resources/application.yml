@@ -1,0 +1,29 @@
+cpb:
+  psd2:
+    splunk-properties:
+      SOURCE:
+        - APIM
+        - INVIEW
+      API:
+        accounts-and-transactions: AIS
+        payments-initiation: PIS
+        confirmation-of-funds: COF
+        internal-tpp-api: INTERNAL
+        oidcapi: OTHERS
+        oidcmetric: OTHERS
+      METHOD:
+        - POST
+        - GET
+        - PUT
+        - DELETE
+      TYPE:
+        CONSENT:
+          - /cpb/psd2/accounts-access-consent
+          - /cpb/psd2/domestic-payments-consent
+          - /cpb/psd2/cof-consent
+        RESOURCE:
+          - /cpb/psd2/accounts
+          - /cpb/psd2/domestic-payments
+        OTHERS:
+          - /cpb/psd2/oidc/token
+
